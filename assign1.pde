@@ -24,25 +24,23 @@ void draw()
  background(0);
     
 
-  m+=2;
-  m%=480;
 
 
   
 
+  image(enemyImg,m,80);
+  image(fighterImg,500,300);
+  image(treasureImg,treasurex,treasurey);
+
+  
+  m+=2;
+  m%=480;
   
   rectMode(CORNERS);
   rect(15,13,15+x,20);
   noStroke();
   colorMode(RGB);
   fill(255,0,0,190);
-  image(HPImg,0,0);
   
-  
-
-  
-  image(enemyImg,m,80);
-  image(fighterImg,500,300);
-  image(treasureImg,treasurex,treasurey);
-  
+  image(HPImg,0,0); 
 }

@@ -10,10 +10,10 @@ int treasurey=floor(random(450));
 void setup()
 {
   size(640,480);
-  HPImg=loadImage("hp.png");
-  enemyImg=loadImage("enemy.png");
-  fighterImg=loadImage("fighter.png");
-  treasureImg=loadImage("treasure.png");
+  HPImg=loadImage("img/hp.png");
+  enemyImg=loadImage("img/enemy.png");
+  fighterImg=loadImage("img/fighter.png");
+  treasureImg=loadImage("img/treasure.png");
  
 
 }

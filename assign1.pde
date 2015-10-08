@@ -16,12 +16,14 @@ void setup()
 void draw()
 {
   
-    HPImg=loadImage("hp.png");
+    background(0);
+    
+  HPImg=loadImage("hp.png");
   enemyImg=loadImage("enemy.png");
   fighterImg=loadImage("fighter.png");
   treasureImg=loadImage("treasure.png");
   
-  background(0);
+
   m+=2;
   m%=480;
 

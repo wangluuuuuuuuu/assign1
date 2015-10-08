@@ -2,9 +2,11 @@ PImage HPImg;
 PImage enemyImg;
 PImage fighterImg;
 PImage treasureImg;
-int x=floor(random(100)) ;
+int m=1;
+int x=floor(random(150)) ;
 int treasurex=floor(random(610));
 int treasurey=floor(random(450));
+
 void setup()
 {
   size(640,480);
@@ -17,17 +19,17 @@ void setup()
 void draw()
 {
   background(0);
+  m+=2;
+  m%=480;
 
-  image(enemyImg,50,80);
-  image(fighterImg,450,300);
+  image(enemyImg,m,80);
+  image(fighterImg,500,300);
   image(treasureImg,treasurex,treasurey);
   
-  
   rectMode(CORNERS);
-  rect(15,13,40+x,20);
+  rect(15,13,15+x,20);
   noStroke();
   colorMode(RGB);
   fill(255,0,0,190);
-  
   image(HPImg,0,0);
 }

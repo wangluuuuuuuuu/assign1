@@ -10,18 +10,24 @@ int treasurey=floor(random(450));
 void setup()
 {
   size(640,480);
+    HPImg=loadImage("hp.png");
+  enemyImg=loadImage("enemy.png");
+  fighterImg=loadImage("fighter.png");
+  treasureImg=loadImage("treasure.png");
+ 
 
 }
 
 void draw()
 {
   
-    background(0);
+ background(0);
     
-  HPImg=loadImage("hp.png");
-  enemyImg=loadImage("enemy.png");
-  fighterImg=loadImage("fighter.png");
-  treasureImg=loadImage("treasure.png");
+
+  
+  image(enemyImg,m,80);
+  image(fighterImg,500,300);
+  image(treasureImg,treasurex,treasurey);
   
 
   m+=2;
@@ -29,9 +35,7 @@ void draw()
 
 
   
-  image(enemyImg,m,80);
-  image(fighterImg,500,300);
-  image(treasureImg,treasurex,treasurey);
+
   
   rectMode(CORNERS);
   rect(15,13,15+x,20);
